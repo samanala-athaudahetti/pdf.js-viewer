@@ -15921,7 +15921,7 @@ PDFHistory.prototype = {
    if (state.target.dest) {
     this.initialDestination = state.target.dest;
    } else {
-    this.initialBookmark = state.target.hash;
+    this.initialBookmark = "page=1&zoom=auto,-66,792";//state.target.hash;
    }
    this.currentUid = state.uid;
    this.uid = state.uid + 1;
